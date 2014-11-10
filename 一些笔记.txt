@@ -1,4 +1,4 @@
 //client connect
 redis-cli -h 192.168.1.102 -p 6379
-select num(Êı¾İ¿â±àºÅ)
+select numï¼ˆæ•°æ®åº“ç¼–å·ï¼‰
 
