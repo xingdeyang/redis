@@ -2,3 +2,31 @@
 redis-cli -h 192.168.1.102 -p 6379
 select num（数据库编号）
 
+/*
+	Type --> string
+*/
+set key value(不区分插入和更新操作)
+get key
+exist key
+del key
+incr key(若key不存在默认值为0)
+incrby kye num(指定增加的数值)
+decr key
+decrby key num
+append key value
+strlen key
+mget key1 keys2...
+mset key1 value1 key2 value2...
+
+/*
+	Type --> hash
+*/
+hset id key value 
+hget id key
+hmset id key1 value1 key2 value2...
+hmget id keys1 key2...
+
+
+
+
+
