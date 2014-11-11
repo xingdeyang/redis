@@ -72,6 +72,22 @@ zremrangebyrank key start stop
 zremrangebyscore key min max
 zrank key member
 
+/*
+	About expires
+	过期后redis将自动删除该键
+*/
+expire key seconds(设置键值的有效期)
+ttl key 
+persist key
+
+/*
+	Sort: 可以对列表，集合，有序集合数据进行排序
+	by参数： 根据该参数对原有数据排序
+*/ 
+sort key asc/desc limit offset count
+
+
+
 
 
 
