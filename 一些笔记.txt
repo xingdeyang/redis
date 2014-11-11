@@ -10,7 +10,7 @@ get key
 exist key
 del key
 incr key(若key不存在默认值为0)
-incrby kye num(指定增加的数值)
+incrby key num(指定增加的数值)
 decr key
 decrby key num
 append key value
@@ -25,6 +25,56 @@ hset id key value
 hget id key
 hmset id key1 value1 key2 value2...
 hmget id keys1 key2...
+hgetall id(获取此条记录所有键值)
+hexists id key
+hincrby id key num
+hdel id key
+hlen id(获取此条记录字段数)
+
+/*
+	Type --> list
+*/
+lpush key value1 value2...
+rpush key value1 value2...
+lpop key
+rpop key
+llen key
+lrange key start stop
+lrem key count value
+lindex key value
+lset key value
+
+/*
+	Type --> sets
+*/
+sadd key value
+srem key value
+smembers key
+sismember key value
+sdiff key key(差集)
+sunion key key(合集)
+sinter key key(交集)
+scard key(集合中元素个数)
+
+/*
+	Type --> sorted sets
+	有序集合类型为集合每个元素关联了一个分数
+*/
+zadd key score member(e.g. zadd scoreboard 89 derick 90 nana)
+zscore key member
+zrange key start stop
+zrangebyscore key min max [withscores] [limit offset count]
+zincr key increment member
+zcard key
+zcount key min max
+zrem key member
+zremrangebyrank key start stop
+zremrangebyscore key min max
+zrank key member
+
+
+
+
 
 
 
